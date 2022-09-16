@@ -1,0 +1,3 @@
+public String aOrAn(String word) {
+    return 'aeiouAEIOU'.contains(word[0]) ? 'an ' + word : 'a ' + word;
+}
