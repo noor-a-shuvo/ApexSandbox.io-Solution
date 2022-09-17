@@ -1,0 +1,3 @@
+public Boolean isPalindrome(String str){
+   return str ==str.reverse();
+}
