@@ -3,7 +3,7 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
     Integer count = 0;
     for (Integer i = 0; i < numbers.size(); i++)
     {
-        numbers[i] == 1 ? count++ : count = 0;
+        numbers[i] == 1 ? count+=1 : count = 0;
         max < count  ?  max = count : max = max;
     }
     return max;
