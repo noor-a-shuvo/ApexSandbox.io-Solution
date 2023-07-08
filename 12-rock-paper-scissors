@@ -5,6 +5,4 @@ public Integer rockPaperScissors(String player1, String player2) {
     Integer nextIndex = player1Index + 1;
 
     return player1 == player2 ? 0 : ((validSeq[nextIndex] == player2) ? 1 : 2);
-
-
 }
