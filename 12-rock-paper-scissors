@@ -1,10 +1,5 @@
 public Integer rockPaperScissors(String player1, String player2) {
     
     List<String> validSeq = new List<String>{'rock','scissors','paper','rock'};
-    Integer player1Index = validSeq.indexOf(player1);
-    Integer nextIndex = player1Index + 1;
-
-    return player1 == player2 ? 0 : ((validSeq[nextIndex] == player2) ? 1 : 2);
-
-
+    return player1 == player2 ? 0 : ((validSeq[validSeq.indexOf(player1)+1] == player2) ? 1 : 2);
 }
